@@ -27,10 +27,14 @@ May have to change the SSR or add dissipation, to be tested.
 ## Shelly 2.5 Hardware
 * Circuit ground is external live
 * AC Neutral is first regulated to 12V, then to 3.3V for the ESP8266
-* Relays are driven by the 12V controller by mosfets -> **easy to swap for SSR!**
+* Relays are driven by the 12V controlled by mosfets -> **easy to swap for SSR!**
 * Relays and current shunts are in daughter board. Only connections are:
-* * Live
-* * Relay control (live works as ground)
-* * Current value (in a differential pair, ADE7953 limit +/-500mv) **to swap for CT**
-* * Contact terminals
+  * Live
+  * Relay control (live works as ground)
+  * Current value (in a differential pair, ADE7953 limit +/-500mv) **to swap for CT**
+  * Contact terminals
 
+## Software
+Has to be custom, AFAIK existing solutions like ESPEasy or Tasmota won't work because of 50Hz interrupt for energy reading. 
+
+Will use PlatformIO, already have some experience wiht ESP8266
