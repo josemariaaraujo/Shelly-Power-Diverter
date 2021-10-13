@@ -1,9 +1,9 @@
-# ShellyDiverter
+# Shelly Power Diverter
 Power diverter of excess solar production using a Shelly 2.5
 
 In small scale grid-tied solar production, excess power (production in excess of consumption) is injected **for free** back into the network. 
 
-A power diverter can be used to connect a charge, usually a water heater , so that energy doesn't go to waste. Water heater are most suited because they have a resistive element that doesn't care how power is delivered, and energy delivered to it is stored in the form of heated water. A power diverter will only connect the charge some cycles at a time as to not spend more than the production.
+A power diverter can be used to connect a charge, usually a water heater, so that energy doesn't go to waste. Water heater are most suited because they have a resistive element that doesn't care how power is delivered, and energy delivered to it is stored in the form of heated water. A power diverter will only connect the charge some cycles at a time as to not spend more than the production.
 
 There are commercial solutions, like the eddi:https://myenergi.com/product/eddi/, but it's expensive for a small production unit (around €450 at the time of this writing) , delayin a couple of years the ROI.
 
@@ -35,6 +35,7 @@ May have to change the SSR or add dissipation, to be tested.
   * Contact terminals
 
 ## Software
-Has to be custom, AFAIK existing solutions like ESPEasy or Tasmota won't work because of 50Hz interrupt for energy reading. 
+~~Has to be custom, AFAIK existing solutions like ESPEasy or Tasmota won't work because of 50Hz interrupt for energy reading.~~
+Custom module developped to ESPHome
 
-Will use PlatformIO, already have some experience wiht ESP8266
+Used PlatformIO as development environment.
