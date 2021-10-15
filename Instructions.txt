@@ -1,0 +1,8 @@
+Install Python
+
+py -m venv venv
+venv\Scripts\activate
+pip install esphome
+esphome compile diverter.yml
+
+binary in diverter\.pioenvs\diverter\firmware.bin
