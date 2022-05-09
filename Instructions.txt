@@ -1,8 +1,16 @@
-Install Python
+Install Python 3 in the host system.
 
-py -m venv venv
-venv\Scripts\activate
-pip install esphome
-esphome compile diverter.yml
+In a a folder run:
+    git clone https://github.com/josemariaaraujo/Shelly-Power-Diverter
+    cd Shelly-Power-Diverter
+    py -m venv .venv ###OPTIONAL to avoid cluterring the system python install
+    .venv\Scripts\activate ###OPTIONAL to avoid cluterring the system python install
+    pip install esphome==2021.9.3
+    esphome compile diverter.yml
 
 binary in diverter\.pioenvs\diverter\firmware.bin
+
+Upload OTA:
+First https://github.com/yaourdt/mgos-to-tasmota
+then OTA gzipped firmware to Tasmota
+if error(too big), upload first http://ota.tasmota.com/tasmota/release/tasmota-lite.bin

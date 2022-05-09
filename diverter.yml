@@ -14,8 +14,10 @@ external_components:
       path: custom_components      
 
 wifi:
-  ssid: Cao_que_ladra
-  password: Tenho um gato.
+  ssid: xxxxxxxx #replace with local wifi network
+  password: xxxxxxxx #replace with local wifi network
+  ap: 
+    ssid: "Diverter"
 captive_portal:
 
 
